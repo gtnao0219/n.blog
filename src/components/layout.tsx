@@ -12,7 +12,11 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+type IProps = {
+  children: React.ReactNode
+}
+
+const Layout = ({ children }: IProps) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
