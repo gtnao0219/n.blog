@@ -2,15 +2,12 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
-import Header from "./header"
-import Footer from "./footer"
-import "./layout.css"
+import Header from "./Header"
+import Footer from "./Footer"
 
-type IProps = {
-  children: React.ReactNode
-}
+type IProps = {}
 
-const Layout = ({ children }: IProps) => {
+const Layout: React.SFC<IProps> = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

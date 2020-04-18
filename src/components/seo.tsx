@@ -13,7 +13,10 @@ import { useStaticQuery, graphql } from "gatsby"
 type IProps = {
   description: string
   lang: string
-  meta: ({ name: string; content: any; property?: undefined; } | { property: string; content: any; name?: undefined; })[]
+  meta: (
+    | { name: string; content: any; property?: undefined }
+    | { property: string; content: any; name?: undefined }
+  )[]
   title: string
 }
 

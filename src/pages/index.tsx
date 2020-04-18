@@ -2,9 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import PostPreview from "../components/PostPreview"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
+import PostListItem from "../components/PostListItem"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -12,7 +12,7 @@ const IndexPage = () => {
       allMarkdownRemark {
         edges {
           node {
-            excerpt
+            excerpt(pruneLength: 500)
             frontmatter {
               title
               slug
@@ -41,13 +41,13 @@ const IndexPage = () => {
             }
           }) => (
             <div
-              style={{ marginBottom: "16px" }}
+              style={{ marginBottom: "28px" }}
               key={edge.node.frontmatter.slug}
             >
-              <PostPreview
-                link={edge.node.frontmatter.slug}
-                postTitle={edge.node.frontmatter.title}
+              <PostListItem
+                title={edge.node.frontmatter.title}
                 description={edge.node.excerpt}
+                slug={edge.node.frontmatter.slug}
                 date={edge.node.frontmatter.date}
                 tags={edge.node.frontmatter.tags}
               />

@@ -6,11 +6,10 @@ type IProps = {
 }
 
 const Footer: React.SFC<IProps> = ({ author }) => {
-  const year = new Date().getFullYear()
   return (
     <_Footer>
       <Copyright>
-        Copyright © {year} {author} All Rights Reserved.
+        Copyright © {new Date().getFullYear()} {author} All Rights Reserved.
       </Copyright>
     </_Footer>
   )
@@ -20,6 +19,7 @@ const _Footer = styled.footer`
   box-sizing: border-box;
   height: 128px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #383838;
