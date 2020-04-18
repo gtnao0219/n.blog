@@ -36,6 +36,7 @@ const _Link = styled(Link)`
 const _H1 = styled.h1`
   box-sizing: border-box;
   font-size: 24px;
+  margin: 0;
 `
 
 export default Header

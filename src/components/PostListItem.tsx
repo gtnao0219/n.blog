@@ -48,6 +48,7 @@ const _Article = styled.article`
 
 const _H2 = styled.h2`
   box-sizing: border-box;
+  margin: 0;
   margin-bottom: 8px;
   font-size: 24px;
 `
