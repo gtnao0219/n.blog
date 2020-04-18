@@ -1,15 +1,9 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
-import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
 
 import Header from "./header"
+import Footer from "./footer"
 import "./layout.css"
 
 type IProps = {
@@ -22,34 +16,35 @@ const Layout = ({ children }: IProps) => {
       site {
         siteMetadata {
           title
+          author
         }
       }
     }
   `)
-
   return (
-    <>
+    <Wrapper>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
+      <Contents>{children}</Contents>
+      <Footer author={data.site.siteMetadata.author} />
+    </Wrapper>
   )
 }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+const Wrapper = styled.div`
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+`
+
+const Contents = styled.main`
+  box-sizing: border-box;
+  max-width: 960px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 24px 0;
+  flex: 1;
+`
 
 export default Layout

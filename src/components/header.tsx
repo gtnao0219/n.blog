@@ -1,46 +1,42 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
 
 type IProps = {
   siteTitle: string
 }
 
-const Header = ({ siteTitle }: IProps) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+const Header: React.SFC<IProps> = ({ siteTitle }) => (
+  <_Header>
+    <_H1>
+      <_Link to="/">{siteTitle}</_Link>
+    </_H1>
+  </_Header>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+const _Header = styled.header`
+  box-sizing: border-box;
+  height: 40px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  background-color: #0f4c81;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+`
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+const _H1 = styled.h1`
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 24px;
+`
+
+const _Link = styled(Link)`
+  box-sizing: border-box;
+  text-decoration: none;
+  &:visited {
+    color: inherit;
+  }
+`
 
 export default Header

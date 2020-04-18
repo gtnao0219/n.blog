@@ -1,0 +1,18 @@
+{
+  //*.js
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  //*.jsx
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
+  },
+  //*.ts
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  //*.tsx
+  "[typescriptreact]": {
+    "editor.formatOnSave": true
+  }
+}
