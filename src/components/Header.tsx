@@ -28,6 +28,9 @@ const _Header = styled.header`
 const _Link = styled(Link)`
   box-sizing: border-box;
   text-decoration: none;
+  &:link {
+    color: inherit;
+  }
   &:visited {
     color: inherit;
   }
