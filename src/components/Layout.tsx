@@ -37,7 +37,7 @@ const Wrapper = styled.div`
 
 const Contents = styled.main`
   box-sizing: border-box;
-  max-width: 960px;
+  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
   padding: 24px 0;
