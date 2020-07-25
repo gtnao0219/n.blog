@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import { PALETTES } from "../utils/colorMap"
 
 type IProps = {
   siteTitle: string
@@ -20,8 +21,8 @@ const _Header = styled.header`
   padding: 0 16px;
   display: flex;
   align-items: center;
-  background-color: #0f4c81;
-  color: #ffffff;
+  background-color: ${PALETTES.main.dark};
+  color: ${PALETTES.white.base};
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 `
 
@@ -29,9 +30,19 @@ const _Link = styled(Link)`
   box-sizing: border-box;
   text-decoration: none;
   &:link {
+    text-decoration: none;
     color: inherit;
   }
   &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+  &:active {
+    text-decoration: none;
     color: inherit;
   }
 `

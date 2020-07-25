@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `n.blog`,
+    title: `gtnao.io`,
     description: `naotaka nakane tech blog.`,
     author: `naotaka nakane`,
   },
@@ -13,8 +13,8 @@ module.exports = {
         name: `n.blog`,
         short_name: `n.blog`,
         start_url: `/`,
-        background_color: `#0f4c81`,
-        theme_color: `#0f4c81`,
+        background_color: `#3e7099`,
+        theme_color: `#3e7099`,
         display: `minimal-ui`,
         icon: `contents/images/favicon.png`,
       },

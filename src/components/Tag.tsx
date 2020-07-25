@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { PALETTES } from "../utils/colorMap"
 
 type IProps = {}
 
@@ -8,14 +9,16 @@ const Tag: React.SFC<IProps> = ({ children }) => <Wrapper>{children}</Wrapper>
 const Wrapper = styled.div`
   box-sizing: border-box;
   display: inline-block;
-  padding: 4px 8px;
-  background-color: #0f4c81;
-  color: #ffffff;
+  padding: 0 8px;
+  background-color: ${PALETTES.main.dark};
+  color: ${PALETTES.white.base};
   line-height: 1;
   font-size: 12px;
-  font-weight: 400;
+  line-height: 1.6;
+  font-weight: bold;
   text-align: center;
-  border-radius: 2px;
+  border-radius: 3px;
+  pointer-events: none;
 `
 
 export default Tag

@@ -2,10 +2,12 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Post from "../components/Post"
+import SEO from "../components/SEO"
 
 const PostTemplate = (props: any) => {
   return (
     <Layout>
+      <SEO title={props.data.markdownRemark.frontmatter.title} />
       <Post
         html={props.data.markdownRemark.html}
         title={props.data.markdownRemark.frontmatter.title}

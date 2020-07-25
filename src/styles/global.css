@@ -3,6 +3,7 @@ html, body, #___gatsby, #gatsby-focus-wrapper {
 }
 
 html {
+  /* font-family: sans-serif; */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -191,6 +192,8 @@ html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  font-size: 14px;
+  line-height: 1.8;
 }
 * {
   box-sizing: inherit;
@@ -237,8 +240,8 @@ h1 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
-  line-height: 1.1;
+  font-size: 24px;
+  line-height: 1.4;
 }
 h2 {
   margin-left: 0;
@@ -254,8 +257,8 @@ h2 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
-  line-height: 1.1;
+  font-size: 20px;
+  line-height: 1.4;
 }
 h3 {
   margin-left: 0;
@@ -271,8 +274,8 @@ h3 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
-  line-height: 1.1;
+  font-size: 18px;
+  line-height: 1.4;
 }
 h4 {
   margin-left: 0;
@@ -288,8 +291,8 @@ h4 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1rem;
-  line-height: 1.1;
+  font-size: 16px;
+  line-height: 1.4;
 }
 h5 {
   margin-left: 0;
@@ -305,8 +308,8 @@ h5 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 0.85028rem;
-  line-height: 1.1;
+  font-size: 15px;
+  line-height: 1.4;
 }
 h6 {
   margin-left: 0;
@@ -322,8 +325,8 @@ h6 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 0.78405rem;
-  line-height: 1.1;
+  font-size: 14px;
+  line-height: 1.4;
 }
 hgroup {
   margin-left: 0;
@@ -388,6 +391,8 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  font-size: 14px;
+  line-height: 1.8;
 }
 figure {
   margin-left: 0;

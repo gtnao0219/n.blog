@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { PALETTES } from "../utils/colorMap"
 
 type IProps = {
   author: string
@@ -22,13 +23,13 @@ const _Footer = styled.footer`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #383838;
-  color: #ffffff;
+  background-color: ${PALETTES.gray.dark};
+  color: ${PALETTES.white.base};
 `
 
 const Copyright = styled.div`
   box-sizing: border-box;
-  font-size: 11px;
+  font-size: 12px;
 `
 
 export default Footer
