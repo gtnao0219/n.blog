@@ -12,7 +12,7 @@ const IndexPage = () => {
       allMarkdownRemark {
         edges {
           node {
-            excerpt(pruneLength: 500)
+            excerpt(pruneLength: 120)
             frontmatter {
               title
               slug
