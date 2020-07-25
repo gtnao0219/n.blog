@@ -21,7 +21,7 @@ const PostListItem: React.SFC<IProps> = ({
   tags,
 }) => (
   <_Article>
-    <_Link to={slug}>
+    <_Link to={`${slug}/`}>
       <_H2>{title}</_H2>
       <Description>{description}</Description>
       <Bottom>
