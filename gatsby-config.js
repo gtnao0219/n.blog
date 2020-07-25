@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `gtnao.io`,
+    title: `blog.gtnao.com`,
     description: `naotaka nakane tech blog.`,
     author: `naotaka nakane`,
   },
@@ -10,8 +10,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `n.blog`,
-        short_name: `n.blog`,
+        name: `blog.gtnao.com`,
+        short_name: `blog.gtnao.com`,
         start_url: `/`,
         background_color: `#3e7099`,
         theme_color: `#3e7099`,
