@@ -4,4 +4,4 @@
 
 my blog hosted by Gatsby.js
 
-https://blissful-johnson-3de578.netlify.app/
+https://www.blog.gtnao.com
